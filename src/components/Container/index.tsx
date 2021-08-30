@@ -1,7 +1,11 @@
 import { FC } from 'react';
+import Home from '../Home';
+import { ContainerWrapper } from './index.styled';
 
 const Container: FC = () => (
-  <h1>wow</h1>
+  <ContainerWrapper>
+    <Home />
+  </ContainerWrapper>
 )
 
 export default Container;
