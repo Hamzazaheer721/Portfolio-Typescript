@@ -24,9 +24,13 @@ module.exports = {
       1,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/jsx-props-no-spreading': 'off',
     'no-plusplus': 'off',
-    'no-unused-expressions': ['error', { allowTernary: true, allowShortCircuit: true }],
+    'no-unused-expressions': [
+      'error',
+      { allowTernary: true, allowShortCircuit: true },
+    ],
     'react/react-in-jsx-scope': 'off',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
@@ -41,4 +45,4 @@ module.exports = {
       },
     ],
   },
-};
+}

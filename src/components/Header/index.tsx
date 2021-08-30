@@ -1,30 +1,58 @@
 import { FC } from 'react';
-import { HeaderContainer, ListItem, UnOrderedGrid } from './index.styled';
+import {
+  AboutIcon,
+  AnchorTag, ContactIcon, HeaderContainer, HomeIcon, ListItem,
+  NavContainer, PortfolioIcon, ServicesIcon, SkillsIcon, UnOrderedGrid,
+} from './index.styled';
 
 const Header: FC = () => (
   <HeaderContainer>
-    <UnOrderedGrid>
-      <ListItem>
-        <a href="#Home">
-          <i>Home</i>
-        </a>
-      </ListItem>
-      <ListItem>
-        Services
-      </ListItem>
-      <ListItem>
-        Skills
-      </ListItem>
-      <ListItem>
-        Portfolio
-      </ListItem>
-      <ListItem>
-        About
-      </ListItem>
-      <ListItem>
-        Contact
-      </ListItem>
-    </UnOrderedGrid>
+    <NavContainer>
+      {/* Portfolio Person */}
+      <AnchorTag>
+        Alexa
+      </AnchorTag>
+      {/* Grid Items */}
+      <UnOrderedGrid>
+        <ListItem>
+          <AnchorTag href="#home">
+            <HomeIcon />
+            Home
+          </AnchorTag>
+        </ListItem>
+        <ListItem>
+          <AnchorTag href="#about">
+            <AboutIcon />
+            About
+          </AnchorTag>
+        </ListItem>
+        <ListItem>
+          <AnchorTag href="#skills">
+            <SkillsIcon />
+            Skills
+          </AnchorTag>
+        </ListItem>
+        <ListItem>
+          <AnchorTag href="#services">
+            <ServicesIcon />
+            Services
+          </AnchorTag>
+        </ListItem>
+        <ListItem>
+          <AnchorTag href="#portfolio">
+            <PortfolioIcon />
+            Portfolio
+          </AnchorTag>
+        </ListItem>
+        <ListItem>
+          <AnchorTag href="#contact">
+            <ContactIcon />
+            Contact
+          </AnchorTag>
+        </ListItem>
+      </UnOrderedGrid>
+    </NavContainer>
+
   </HeaderContainer>
 
 )
