@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {
+  CloseOutlined,
   CustomerServiceOutlined,
   FileOutlined, HomeOutlined, MessageOutlined, PictureOutlined, UserOutlined,
 } from '@ant-design/icons'
@@ -13,9 +14,10 @@ export const NavContainer = styled.div`
 
 `;
 
-export const UnOrderedGrid = styled.ul`
-  display: grid;
+export const UnOrderedList = styled.ul`
+  display: inline-block;
   gap: 1.5px;
+  list-style-type: none;
 `
 
 export const ListItem = styled.li`
@@ -36,6 +38,10 @@ export const ServicesIcon = styled(CustomerServiceOutlined)`
 export const PortfolioIcon = styled(PictureOutlined)`
 `
 export const ContactIcon = styled(MessageOutlined)`
+`
+
+// Nav Close Button
+export const NavCloseButton = styled(CloseOutlined)`
 `
 
 export default {}

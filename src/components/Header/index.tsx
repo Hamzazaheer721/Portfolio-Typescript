@@ -2,7 +2,8 @@ import { FC } from 'react';
 import {
   AboutIcon,
   AnchorTag, ContactIcon, HeaderContainer, HomeIcon, ListItem,
-  NavContainer, PortfolioIcon, ServicesIcon, SkillsIcon, UnOrderedGrid,
+  NavCloseButton,
+  NavContainer, PortfolioIcon, ServicesIcon, SkillsIcon, UnOrderedList,
 } from './index.styled';
 
 const Header: FC = () => (
@@ -10,10 +11,10 @@ const Header: FC = () => (
     <NavContainer>
       {/* Portfolio Person */}
       <AnchorTag>
-        Alexa
+        Xapper7
       </AnchorTag>
-      {/* Grid Items */}
-      <UnOrderedGrid>
+      {/* Nav Items */}
+      <UnOrderedList>
         <ListItem>
           <AnchorTag href="#home">
             <HomeIcon />
@@ -50,7 +51,9 @@ const Header: FC = () => (
             Contact
           </AnchorTag>
         </ListItem>
-      </UnOrderedGrid>
+      </UnOrderedList>
+      {/* Nav Close Button */}
+      <NavCloseButton />
     </NavContainer>
 
   </HeaderContainer>
